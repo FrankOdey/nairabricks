@@ -1,0 +1,21 @@
+1. Locality information
+    a. rating and review
+    b. locality photos
+2. Mortgages
+    a. Mortgage quotes
+    b. Mortgage calculator
+3. Questions
+    a. vote on questions
+    b. flag questions
+    c. edit answers
+4. Blog
+    a.edit comment
+
+5. Listings
+    a. Confirmed agent, lender etc
+    b. auto populate city field in start page of entering listing
+6. Dashboard
+    a. edit and delete (user type, groups, blog & question categories, property categories,
+    etc)
+    b. Manage Listings, Blogs and Questions
+    c. Manage users

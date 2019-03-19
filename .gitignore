@@ -1,0 +1,12 @@
+*.pyc
+buddy.egg-info
+buddy/images
+data
+.idea/
+alembic.ini
+alembic
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

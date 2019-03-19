@@ -1,0 +1,69 @@
+<%inherit file = "buddy:templates/base/base.mako"/>
+<%include file="buddy:templates/blog/list-top.mako" />
+<div class="container">
+	<div class="row">
+	<div class="col-sm-4 col-md-3">
+	<div class="wrapper">
+	<ul class="list-unstyled">
+	<li><a href="">Overview</a></li>
+	<li><a href="${request.route_url('user_blog', prefix=request.user.prefix)}">Blogs</a></li>
+	<li><a href="${request.route_url('user_listings', prefix=request.user.prefix)}">Listings</a></li>
+	<li><a href="${request.route_url('user_questions', prefix=request.user.prefix)}">Q&A</a></li>
+	<li><a href="">Voices activity</a></li>
+	<li><a href="">Mortgage Calculator</a></li>
+	<li><a href="${request.route_url('profile', prefix=request.user.prefix)}">Profile</a></li>
+
+	</ul>
+	</div>
+<div class="profile-completeness wrapper">
+	<fieldset><legend>Profile Completeness</legend>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+20%
+    <span class="sr-only">20% Complete</span>
+  </div>
+</div>
+Your profile is 20% complete. Answer a few questions on Nairabricks <a href="${request.route_url('question_list')}">Voices</a> to get up to 50%.
+
+	</fieldset>
+	</div>
+	</div>
+	<div class="col-sm-8 col-md-9" >
+	<div class="wrapper">
+        <div class="row">
+	<div class="col-xs-6 col-sm-3 col-md-2">
+	<div class="thumbnail">
+	<img src="/static/user_m_00_m.gif" class="img-responsive">
+	</div>
+	<a href="">Upload a photo</a>
+	</div>
+	<div class="col-xs-pull-2 col-sm-pull-6 col-md-pull-8">
+	${request.user.fullname}
+	</div>
+	</div>
+	<div class="col-sm-offset-8 col-md-offset-10" id="accordion">
+	<a href="${request.route_url('profile', prefix=request.user.prefix)}" class="btn btn-pink">View Profile</a>
+	</div>
+	<div class="h4 acct-wrapper"><strong>Email and Password <a data-toggle="collapse" data-parent="#accordion" href="#f1"><span class="pull-right glyphicon glyphicon-plus-sign"></span></a></strong></div>
+<div class="f1">
+<div id="f1" class="collapse">
+<%include file="eandp.mako"/>
+</div>
+</div>
+<div class="h4 acct-wrapper"><strong>Personal Informations <a data-toggle="collapse" data-parent="#accordion" href="#f2"><span class="pull-right glyphicon glyphicon-plus-sign"></span></a></strong></div>
+<div class="f1">
+<div id="f2" class="collapse">
+	pop out
+</div>
+</div>
+
+<div class="h4 acct-wrapper"><strong>About Me <a data-toggle="collapse" data-parent="#accordion" href="#f3"><span class="pull-right glyphicon glyphicon-plus-sign"></span></a></strong></div>
+<div class="f1">
+<div id="f3" class="collapse">
+	<%include file="abtfrm.mako" />
+</div>
+</div>
+
+	</div>
+	</div>
+</div>

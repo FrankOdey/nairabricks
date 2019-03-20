@@ -3,6 +3,7 @@ buddy README
 
 Getting Started
 ---------------
+Requires python 2.7
 
 - cd <directory containing this file>
 
